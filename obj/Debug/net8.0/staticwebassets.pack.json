@@ -17,8 +17,28 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Outhle Hard\\source\\repos\\Portafolio\\Portafolio\\wwwroot\\imagenes\\amazon.png",
+      "PackagePath": "staticwebassets\\imagenes\\amazon.png"
+    },
+    {
+      "Id": "C:\\Users\\Outhle Hard\\source\\repos\\Portafolio\\Portafolio\\wwwroot\\imagenes\\dotnet-imagen-2.png",
+      "PackagePath": "staticwebassets\\imagenes\\dotnet-imagen-2.png"
+    },
+    {
+      "Id": "C:\\Users\\Outhle Hard\\source\\repos\\Portafolio\\Portafolio\\wwwroot\\imagenes\\dotnet-imagen-2.svg.png",
+      "PackagePath": "staticwebassets\\imagenes\\dotnet-imagen-2.svg.png"
+    },
+    {
       "Id": "C:\\Users\\Outhle Hard\\source\\repos\\Portafolio\\Portafolio\\wwwroot\\imagenes\\foto.jpg",
       "PackagePath": "staticwebassets\\imagenes\\foto.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Outhle Hard\\source\\repos\\Portafolio\\Portafolio\\wwwroot\\imagenes\\nyt.png",
+      "PackagePath": "staticwebassets\\imagenes\\nyt.png"
+    },
+    {
+      "Id": "C:\\Users\\Outhle Hard\\source\\repos\\Portafolio\\Portafolio\\wwwroot\\imagenes\\reddit.png",
+      "PackagePath": "staticwebassets\\imagenes\\reddit.png"
     },
     {
       "Id": "C:\\Users\\Outhle Hard\\source\\repos\\Portafolio\\Portafolio\\wwwroot\\js\\site.js",

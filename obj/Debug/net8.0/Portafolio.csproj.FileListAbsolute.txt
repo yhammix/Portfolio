@@ -28,3 +28,4 @@ C:\Users\Outhle Hard\source\repos\Portafolio\Portafolio\obj\Debug\net8.0\refint\
 C:\Users\Outhle Hard\source\repos\Portafolio\Portafolio\obj\Debug\net8.0\Portafolio.pdb
 C:\Users\Outhle Hard\source\repos\Portafolio\Portafolio\obj\Debug\net8.0\Portafolio.genruntimeconfig.cache
 C:\Users\Outhle Hard\source\repos\Portafolio\Portafolio\obj\Debug\net8.0\ref\Portafolio.dll
+C:\Users\Outhle Hard\source\repos\Portafolio\Portafolio\obj\Debug\net8.0\Portafolio.sourcelink.json
