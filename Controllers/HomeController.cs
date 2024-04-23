@@ -1,61 +1,47 @@
 using Microsoft.AspNetCore.Mvc;
 using Portafolio.Models;
+using Portafolio.Servicios;
 using System.Diagnostics;
 
 namespace Portafolio.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IRepositorioProyectos repositorioProyectos;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IRepositorioProyectos repositorioProyectos)
         {
-            _logger = logger;
+            
+            this.repositorioProyectos = repositorioProyectos;
         }
 
         public IActionResult Index()
-        {
-            var proyectos = ObtenerProyectos ().Take(3).ToList();
+        {            
+            var proyectos = repositorioProyectos.ObtenerProyectos().Take(3).ToList();
             var modelo = new HomeIndexViewModel() { Proyectos = proyectos };
             return View(modelo);
         }
 
-        private List<Proyecto> ObtenerProyectos()
+        public IActionResult Proyectos()
         {
-            return new List<Proyecto>()
-            {
-                new Proyecto
-                {
-                    Titulo="Amazon",
-                    Descripcion ="E-Commerce realizado en ASP.NET core",
-                    Link ="https://amazon.com",
-                    ImagenURL ="/imagenes/amazon.png"
-                },
-                new Proyecto
-                {
-                    Titulo="New York Times",
-                    Descripcion ="Pagina de noticias en React",
-                    Link ="https://nytimes.com",
-                    ImagenURL ="/imagenes/nyt.png"
-                },
-                new Proyecto
-                {
-                    Titulo="Reddit",
-                    Descripcion ="Red social para compartir en comunidades",
-                    Link ="https://reddit.com",
-                    ImagenURL ="/imagenes/reddit.png"
-                },
-                new Proyecto
-                {
-                    Titulo="Steam",
-                    Descripcion ="Tienda en linea para comprar video juegos",
-                    Link ="https://store.steampowered.com",
-                    ImagenURL ="/imagenes/nyt.png"
-                }
-            };
+           var proyectos = repositorioProyectos.ObtenerProyectos();
+            return View(proyectos);
         }
 
-        public IActionResult Privacy()
+        [HttpGet]
+        public IActionResult Contacto() 
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public IActionResult Contacto(ContactoViewModel contactoViewModel)
+        {
+            return RedirectToAction("Gracias");
+        }
+
+        public IActionResult Gracias()
         {
             return View();
         }
